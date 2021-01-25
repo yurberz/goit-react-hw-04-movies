@@ -41,11 +41,11 @@ class MovieAdditional extends Component {
     const id = match.params.movieId;
 
     getMovieCredits(id)
-      .then((data) => this.setState({ cast: data }))
+      .then((cast) => this.setState({ cast: cast }))
       .catch((error) => console.log(error));
 
     getMovieReviews(id)
-      .then((data) => this.setState({ reviews: data }))
+      .then((results) => this.setState({ reviews: results }))
       .catch((error) => console.log(error));
   };
 
