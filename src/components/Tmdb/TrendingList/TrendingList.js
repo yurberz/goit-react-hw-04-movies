@@ -9,7 +9,7 @@ const Ul = styled.ul`
 `;
 
 const List = styled(Link)`
-  color: darkslateblue;
+  color: honeydew;
   font-size: 18px;
 `;
 

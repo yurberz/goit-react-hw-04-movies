@@ -1,5 +1,5 @@
 import { Component, Suspense } from "react";
-import { Link, Route, Switch } from "react-router-dom";
+import { NavLink, Route, Switch } from "react-router-dom";
 import LoaderSpinner from "../Loader/LoaderSpinner";
 import { routesAdditional } from "../../../routes/routes";
 import { getMovieCredits, getMovieReviews } from "../../../services/movieApi";
@@ -19,6 +19,14 @@ const Div = styled.div`
 
   .list:not(:last-child) {
     margin-right: 10px;
+  }
+
+  .link {
+    color: yellow;
+  }
+
+  .active {
+    color: pink;
   }
 `;
 
@@ -54,12 +62,14 @@ class MovieAdditional extends Component {
             <ul>
               {routesAdditional.map(({ path, name }) => (
                 <li className="list" key={path}>
-                  <Link
+                  <NavLink
+                    className="link"
+                    activeClassName="active"
                     to={`${match.url}/${name}`}
                     onClick={this.getHandleInfo}
                   >
                     {name}
-                  </Link>
+                  </NavLink>
                 </li>
               ))}
             </ul>

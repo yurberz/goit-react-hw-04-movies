@@ -12,11 +12,11 @@ const Nav = styled.nav`
   }
 
   .link {
-    color: gold;
+    color: springgreen;
   }
 
   .active {
-    color: darkslateblue;
+    color: salmon;
   }
 `;
 

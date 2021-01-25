@@ -48,7 +48,6 @@ class Searchbox extends Component {
     return (
       <Form onSubmit={this.handleSubmit}>
         <input
-          name="search"
           type="text"
           value={value}
           required

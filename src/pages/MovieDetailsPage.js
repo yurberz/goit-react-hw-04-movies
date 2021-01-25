@@ -101,7 +101,7 @@ class MovieDetailsPage extends Component {
               <img
                 src={`https://image.tmdb.org/t/p/original/${posterSrc}`}
                 alt={title}
-                width="400"
+                width="350"
               />
             )}
           </div>

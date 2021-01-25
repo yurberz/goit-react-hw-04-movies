@@ -7,19 +7,18 @@ import styled from "styled-components";
 const Main = styled.main`
   h1 {
     font-size: 48px;
-    margin-bottom: 20px;
+    margin-bottom: 30px;
   }
 
   h2 {
     font-size: 32px;
-    margin-bottom: 10px;
+    margin-bottom: 15px;
   }
 `;
 
 class HomePage extends Component {
   state = {
     trandingList: [],
-    error: null,
     loading: false,
   };
 
