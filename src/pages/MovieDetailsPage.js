@@ -13,6 +13,8 @@ const Main = styled.main`
 
   .img {
     margin-right: 15px;
+    max-width: 400px;
+    height: auto;
   }
 
   .cardInfo {
@@ -101,7 +103,7 @@ class MovieDetailsPage extends Component {
               <img
                 src={`https://image.tmdb.org/t/p/original/${posterSrc}`}
                 alt={title}
-                width="350"
+                width="400"
               />
             )}
           </div>

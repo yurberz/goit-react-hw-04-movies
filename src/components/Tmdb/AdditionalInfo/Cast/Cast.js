@@ -5,6 +5,10 @@ const Ul = styled.ul`
   flex-wrap: wrap;
   justify-content: center;
 
+  img {
+    max-width: 150px;
+  }
+
   .list {
     margin-bottom: 10px;
     margin-right: 10px;
