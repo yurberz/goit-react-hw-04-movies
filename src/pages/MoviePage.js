@@ -43,6 +43,10 @@ class MoviesPage extends Component {
   }
 
   fetchMovies = (query) => {
+    if (query === "") {
+      return;
+    }
+
     getSearchMovies(query)
       .then((results) => {
         this.setState({
