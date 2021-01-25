@@ -46,7 +46,9 @@ class HomePage extends Component {
 
         {loading && <LoaderSpinner />}
 
-        {trandingList.length && <TrendingMovies trandingList={trandingList} />}
+        {trandingList.length > 0 && (
+          <TrendingMovies trandingList={trandingList} />
+        )}
       </Main>
     );
   }
